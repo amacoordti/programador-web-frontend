@@ -6,13 +6,12 @@ import {
     Content,
     Logo,
     Title,
-    Small,
-    Form,
-    Input,
-    Button
+    Small
 } from './styles'
 
-const Login = () => {
+import Login from './Login'
+
+const Authenticate = () => {
     return(
         <Container>
             <Main>
@@ -20,15 +19,11 @@ const Login = () => {
                     <Logo>Meu blog</Logo>
                     <Title>Bem vindo de Volta</Title>
                     <Small>Faça login para continuar</Small>
-                    <Form>
-                        <Input type="email" placeholder="Email" />
-                        <Input type="password" placeholder="Senha" />
-                        <Button>Entrar</Button>
-                    </Form>
+                    <Login />
                 </Content>
             </Main>
         </Container>
     )
 }
 
-export default Login
+export default Authenticate

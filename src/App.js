@@ -5,7 +5,7 @@ import {
     Route
 } from 'react-router-dom'
 
-import Login from './pages/Login'
+import Authenticate from './pages/Authenticate'
 
 import GlobalStyle from './styles/global'
 
@@ -14,7 +14,7 @@ const App = () => {
         <Router>
             <GlobalStyle />
             <Switch>
-                <Route exact path="/" component={ Login } />
+                <Route exact path="/" component={ Authenticate } />
             </Switch>
         </Router>
     )
