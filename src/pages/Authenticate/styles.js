@@ -9,6 +9,11 @@ export const Container = styled.div`
     grid-template-columns: 4fr 8fr;
     grid-template-areas: "main aside";
     background-image: url(${Background});
+
+    @media screen and (max-width: 360px) {
+        grid-template-columns: 12fr;
+        grid-template-areas: "main";
+    }
 `
 export const Main = styled.main`
     grid-area: main;

@@ -15,6 +15,7 @@ const App = () => {
             <GlobalStyle />
             <Switch>
                 <Route exact path="/" component={ Authenticate } />
+                <Route exact path="/register" component={ Authenticate } />
             </Switch>
         </Router>
     )
