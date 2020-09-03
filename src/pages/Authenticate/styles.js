@@ -19,8 +19,10 @@ export const Main = styled.main`
     grid-area: main;
     background: white;
     display: grid;
-    grid-template-columns: 1fr 10fr 1fr;
     grid-template-areas: ". content .";
+    @media screen and (max-width: 500px) {
+        grid-template-columns: 1fr 10fr 1fr;
+    }
     @media screen and (max-width: 1000px) {
         grid-template-columns: 3fr 6fr 3fr;
     }
