@@ -10,7 +10,7 @@ export const Container = styled.div`
     grid-template-areas: "main aside";
     background-image: url(${Background});
 
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: 1000px) {
         grid-template-columns: 12fr;
         grid-template-areas: "main";
     }
@@ -21,6 +21,9 @@ export const Main = styled.main`
     display: grid;
     grid-template-columns: 1fr 10fr 1fr;
     grid-template-areas: ". content .";
+    @media screen and (max-width: 1000px) {
+        grid-template-columns: 3fr 6fr 3fr;
+    }
 `
 export const Content = styled.div`
     grid-area: content;
