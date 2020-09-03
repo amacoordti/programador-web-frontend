@@ -17,14 +17,11 @@ export const Container = styled.div`
 `
 export const Main = styled.main`
     grid-area: main;
-    background: white;
+    background: #fafafa;
     display: grid;
     grid-template-areas: ". content .";
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 499px) {
         grid-template-columns: 1fr 10fr 1fr;
-    }
-    @media screen and (max-width: 1000px) {
-        grid-template-columns: 3fr 6fr 3fr;
     }
 `
 export const Content = styled.div`
